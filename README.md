@@ -10,7 +10,6 @@ This repository showcases a set of frontend projects developed during my interns
 ### 📝 Description
 A lightweight and responsive **Image Slider** built using **HTML**, **CSS**, and **JavaScript**. It cycles through a set of 10 images with a smooth transition effect, making it suitable for portfolios, galleries, or product showcases.
 
----
 
 ### 📂 Folder Structure
 ```
@@ -21,21 +20,17 @@ A lightweight and responsive **Image Slider** built using **HTML**, **CSS**, and
 └── images/          # Contains 10 slider images
 ```
 
----
-
 ### 🚀 How to Run
 1. Clone or download the repository.
 2. Open the `Image-Slider` folder.
 3. Launch `index.html` in your browser.
 
----
 
 ### 🧰 Tech Used
 - HTML5
 - CSS3 (Flexbox)
 - JavaScript (Vanilla)
 
----
 
 ### 📌 Features
 - Auto-transitioning slider
