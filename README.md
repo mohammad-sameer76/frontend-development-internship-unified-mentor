@@ -1,7 +1,7 @@
 
 # 💼 Frontend Developer Internship Projects
 
-This repository showcases a set of frontend projects developed during my internship preparation phase. Each project demonstrates core web development skills using HTML, CSS, and JavaScript.
+This repository showcases a set of frontend projects developed during my internship phase. Each project demonstrates core web development skills using HTML, CSS, and JavaScript.
 
 ---
 
