@@ -1,7 +1,3 @@
-
-
-
-
 var inItSlider = () => {
 
     const imageSlider = document.querySelector(".slider-wrapper");
@@ -13,28 +9,28 @@ var inItSlider = () => {
 
 
 
-    scrollbarThumb.addEventListener("mousedown",(e)=>{
+    scrollbarThumb.addEventListener("mousedown", (e) => {
         const startX = e.clientX;
         const scrollPosition = scrollbarThumb.offsetLeft;
 
-        const handleMouseMove = (e)=>{
+        const handleMouseMove = (e) => {
             const deltaX = e.clientX - startX;
             const newthumbPosition = scrollPosition + deltaX;
             const boundingThumbPosition = scrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
-            const finalThumbPosition = Math.max(0,Math.min(newthumbPosition,boundingThumbPosition))
+            const finalThumbPosition = Math.max(0, Math.min(newthumbPosition, boundingThumbPosition))
             scrollbarThumb.style.left = `${finalThumbPosition}px`;
-            const imgScroll = Math.round ((finalThumbPosition/boundingThumbPosition)*(maxScrollLeft));
-            imageList.scrollLeft = imgScroll;   
+            const imgScroll = Math.round((finalThumbPosition / boundingThumbPosition) * (maxScrollLeft));
+            imageList.scrollLeft = imgScroll;
         }
-        const handleMouseUp = ()=>{
-            document.removeEventListener("mousemove",handleMouseMove);
-            document.removeEventListener("mouseup",handleMouseUp);
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
         }
-        document.addEventListener("mousemove",handleMouseMove);
-        document.addEventListener("mouseup",handleMouseUp);
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
     });
 
-    
+
 
     slideButton.forEach(function (button) {
         button.addEventListener("click", () => {
@@ -48,6 +44,8 @@ var inItSlider = () => {
             slideButton[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "block";
 
         };
+
+
         const updateScrollbarThumb = () => {
             const scrollPosition = imageList.scrollLeft;
             let thumbPosition = (scrollPosition / maxScrollLeft) * (scrollbar.clientWidth - scrollbarThumb.offsetWidth);
@@ -60,13 +58,44 @@ var inItSlider = () => {
             updateScrollbarThumb();
         });
 
-
-
     });
 
 
-};
 
+
+    //Automatic slideshow after every 3s and loopback to first image
+    let autoSlideInterval;
+    let userIsActive = false;
+    const startAutoSlide = () => {
+        autoSlideInterval = setInterval(() => {
+            if (!userIsActive) {
+                if (imageList.scrollLeft >= maxScrollLeft) {
+                    // Go back to the beginning if at the end
+                    imageList.scrollTo({ left: 0, behavior: "smooth" });
+                } else {
+                    imageList.scrollBy({ left: imageList.clientWidth, behavior: "smooth" });
+                }
+            }
+        }, 4000);
+    };
+
+    // Pause auto-slide on user interaction
+    ["mousedown", "touchstart", "wheel", "keydown"].forEach(event => {
+        imageSlider.addEventListener(event, () => {
+            userIsActive = true;
+            clearInterval(autoSlideInterval);
+
+            // Resume auto-slide after 5 seconds of inactivity
+            setTimeout(() => {
+                userIsActive = false;
+                startAutoSlide();
+            }, 8000);
+        });
+    });
+
+    // start when the page loads
+    startAutoSlide();
+};
 
 
 
