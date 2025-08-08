@@ -1,4 +1,4 @@
-## 📸 01 - Image Slider
+## 📸 Image Slider
 
 ### 📝 Description
 A lightweight and responsive **Image Slider** built using **HTML**, **CSS**, and **JavaScript**. It cycles through a set of 10 images with a smooth transition effect, making it suitable for portfolios, galleries, or product showcases.
