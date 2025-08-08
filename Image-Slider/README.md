@@ -30,3 +30,6 @@ A lightweight and responsive **Image Slider** built using **HTML**, **CSS**, and
 - Fade animation
 - Clean and responsive layout
 - Easy to customize or extend
+- Automatic Slideshow
+- Navigation buttons for manual control
+- Responsive design for various screen sizes
