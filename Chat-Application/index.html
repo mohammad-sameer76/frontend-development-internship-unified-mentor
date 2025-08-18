@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SparkTalks - Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="login-container">
+        <div class="spark-icon">⚡</div>
+        <h1>SparkTalks</h1>
+        <p>Where conversations ignite</p>
+
+        <form>
+          <input id="usernameInput" type="text" placeholder="Enter your username" required />
+          <span id="errorMessage" style="color: red;"></span>
+          <button type="submit">Join Chatroom →</button>
+        </form>
+
+        <small>Just Refresh and you are gone no logout no exit?</small>
+      </div>
+    </div>
+
+    <div class="chat-container">
+      <button class="sidebar-toggle">☰</button>
+      <div class="sidebar">
+        <div class="server-header">
+          <h1 class="server-title">SparkTalks</h1>
+          <button class="add-button">+</button>
+        </div>
+
+        <div class="room-list">
+          <div class="room-section">
+            <h3 class="section-title">Channels</h3>
+            <div class="room-items">
+              <div class="room-item active">
+                <span class="room-icon">#</span>
+                <span class="room-name">general</span>
+              </div>
+              <div class="room-item">
+                <span class="room-icon">#</span>
+                <span class="room-name">random</span>
+              </div>
+              <div class="room-item">
+                <span class="room-icon">#</span>
+                <span class="room-name">tech-discussion</span>
+              </div>
+              <div class="room-item">
+                <span class="room-icon">#</span>
+                <span class="room-name">love</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-info">
+          <div class="user-details">
+            <div class="user-avatar">U</div>
+            <div class="user-text">
+              <div class="user-name">User</div>
+              <div class="user-status">Online</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chat">
+        <div class="chat-header">
+          <div class="channel-info">
+            <span class="channel-icon">#</span>
+            <h2 class="channel-name">general</h2>
+            <div class="member-count">42 members</div>
+          </div>
+        </div>
+
+        <div class="messages-area">
+          <!-- messages will appear here -->
+        </div>
+
+        <div class="message-input-area">
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="Message #general"
+              class="message-input"
+            />
+            <div class="input-actions">
+              <button class="send-button">➤</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+# Firebase configuration
+/firebase-config.js
+/config.js
+.env
+
+# Node.js/npm files
+node_modules/
+npm-debug.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Local development files
+*.local
+*.log
