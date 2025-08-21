@@ -42,9 +42,9 @@ The app features authentication, room creation, and live chat updates.
 - Timestamps & message formatting  
 
 **Screenshots:**  
-![Chat App Login](screenshots/Screenshot-ChatApp-Login.png)  
-![Chat App Room](screenshots/Screenshot-ChatApp-Room.png)  
-![Chat App Conversation](screenshots/Screenshot-ChatApp-Conversation.png)
+![Chat App Login](screenshots/chat-1.png)  
+![Chat App Room](screenshots/chat-2.png)  
+![Chat App Conversation](screenshots/chat-3.png)
 
 ---
 
@@ -64,7 +64,10 @@ It allows both **admins** and **members** to manage their fitness journey.
 - Notifications and reports  
 
 **Screenshot:**  
-![Gym Management](screenshots/Screenshot-Gym.png)
+![Gym Management](screenshots/gym-1.png)
+![Gym Management](screenshots/gym-2.png)
+![Gym Management](screenshots/gym-3.png)
+![Gym Management](screenshots/gym-4.png)
 
 ---
 
@@ -85,8 +88,10 @@ Includes aptitude tests, eligibility checks, and detailed college lists.
 - Location-based search (India / Abroad)  
 
 **Screenshots:**  
-![Career Guidance Page](screenshots/Screenshot-Career1.png)  
-![Career Guidance Test](screenshots/Screenshot-Career2.png)
+![Career Guidance Page](screenshots/career-1.png)  
+![Career Guidance Test](screenshots/career-2.png)  
+![Career Guidance Test](screenshots/career-3.png)
+![Career Guidance Test](screenshots/career-4.png)
 
 ---
 
