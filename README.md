@@ -11,7 +11,7 @@ Below are details of each project along with screenshots.
 
 ### 1. 🖼️ Image Slider
 **Technologies:** HTML, CSS, JavaScript  
-**Difficulty Level:** Intermediate  
+
 
 **Description:**  
 An interactive image slider (carousel) that allows users to view multiple images with smooth transitions.  
@@ -28,8 +28,8 @@ It supports manual navigation (next/prev buttons) and automatic slideshow functi
 ---
 
 ### 2. 💬 SparkTalks Chat Application
-**Technologies:** HTML, CSS, JavaScript (WebSockets)  
-**Difficulty Level:** Hard  
+**Technologies:** HTML, CSS, JavaScript,Firebase
+
 
 **Description:**  
 A real-time chat application where users can join rooms, send messages, and interact instantly.  
@@ -49,8 +49,7 @@ The app features authentication, room creation, and live chat updates.
 ---
 
 ### 3. 🏋️ Gym Management System
-**Technologies:** HTML, CSS, JavaScript, Firebase  
-**Difficulty Level:** Medium  
+**Technologies:** HTML, CSS, JavaScript, React, Firebase
 
 **Description:**  
 A system to manage gym operations including member registration, billing, fee packages, and diet details.  
@@ -72,9 +71,9 @@ It allows both **admins** and **members** to manage their fitness journey.
 ---
 
 ### 4. 🎓 Career Guidance System
-**Technologies:** HTML, CSS, JavaScript, Firebase  
-**Domain:** Education  
-**Difficulty Level:** Medium  
+**Technologies:** HTML, CSS, JavaScript, React, Firebase
+
+
 
 **Description:**  
 A career guidance system to assist students in finding the best college and course (India & Abroad).  
@@ -95,46 +94,8 @@ Includes aptitude tests, eligibility checks, and detailed college lists.
 
 ---
 
-## ⚙️ Installation & Running
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   ```
 
-2. Open the project folder of your choice.  
-3. Launch the `index.html` file in your browser.  
-
-For Firebase-based projects (Gym & Career Guidance), configure Firebase in the `config.js` file.
-
----
-
-## 📂 Folder Structure
-```
-├── Image-Slider/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│
-├── Chat-Application/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│
-├── Gym-Management/
-│   ├── index.html
-│   ├── firebase-config.js
-│   ├── style.css
-│   ├── script.js
-│
-├── Career-Guidance/
-│   ├── index.html
-│   ├── firebase-config.js
-│   ├── style.css
-│   ├── script.js
-│
-└── README.md
-```
 
 ---
 
